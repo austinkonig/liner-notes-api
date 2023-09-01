@@ -24,4 +24,8 @@ https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-
 
 Please feel free to send any feedback, bug reports, or other comments to my linkedin on my profile. Thank you for your patience!
         
+<<<<<<< HEAD
 *NOTE: Refer to the latest version of this README as the project progresses.
+=======
+*NOTE: Refer to the latest version of this README as the project progresses.
+>>>>>>> 40cd94f (added to index.js)
