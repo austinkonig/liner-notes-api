@@ -13,6 +13,15 @@ const app = express();
 app.use(express.json({ limit: '30mb' }));
 app.use(express.urlencoded({ limit: '30mb', extended: true }));
 
+app.use((req, res, next) => {
+  res.set({
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "*",
+    "Access-Control-Allow-Headers": "Origin, Content-Type, X-Auth-Token"
+  });
+  next();
+});
+
 app.use(cors({
   origin: 'https://liner-notes.netlify.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
